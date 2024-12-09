@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Menu</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+        }
+        header h1 {
+            color: #1e90ff; /* Blue accent */
+            margin: 0;
+            font-size: 2.5em;
+        }
+        footer {
+            background-color: #ffd700; /* Yellow accent */
+            text-align: center;
+            padding: 20px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container">
+                <a class="navbar-brand text-primary" href="#">Ice Cream Bliss</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="{% url ' ' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'cart' %}">Go to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <section class="container py-5">
+        <h2 class="text-center mb-4">Our Ice Cream Flavors</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Vanilla Delight</h5>
+                        <p class="card-text">Classic vanilla ice cream with a creamy texture.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Heaven</h5>
+                        <p class="card-text">Rich chocolate ice cream for chocolate lovers.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Bliss</h5>
+                        <p class="card-text">Sweet and tangy strawberry ice cream.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mango Magic</h5>
+                        <p class="card-text">Tropical mango ice cream with a fruity twist.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pistachio Crunch</h5>
+                        <p class="card-text">Nutty pistachio ice cream with a crunchy texture.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Blueberry Burst</h5>
+                        <p class="card-text">Tangy blueberry ice cream with a hint of sweetness.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cookie Dough Delight</h5>
+                        <p class="card-text">Creamy ice cream loaded with chunks of cookie dough.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mint Chocolate Chip</h5>
+                        <p class="card-text">Refreshing mint ice cream with chocolate chips.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Caramel Swirl</h5>
+                        <p class="card-text">Creamy caramel ice cream with a swirl of caramel sauce.</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Our Ice Cream Flavors</h2>
+      <div class="row g-4">
+          {% for ice_cream in ice_creams %}
+          <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">{{ ice_cream.name }}</h5>
+                      <p class="card-text">{{ ice_cream.description }}</p>
+                      <p class="card-text">Price: ${{ ice_cream.price }}</p>
+                      <a href="{% url 'add_to_cart' ice_cream.id %}" class="btn btn-success">Add to Cart</a>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+  </section>
+
+  
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
