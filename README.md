@@ -1,4 +1,5 @@
 //To run the file
+
 Python manage.py runserver
 
 //Landing page
